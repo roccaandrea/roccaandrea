@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lancio dei dadi</title>
+</head>
+<body>
+<button onclick="NumeriCasuali(50)"> genera 50 numeri casuali</button>
+<p id="casuali1"></p>
+<button onclick="ContaZeri()">trovatore di 0</button>
+
+
+
+<script>
+function NumeriCasuali(n) {
+let num=0;
+let casuale=0;
+let array="";
+
+for(let i=0;i<n;i++)
+{
+casuale=Math.random();
+numeri=Math.round(casuale*50);
+array=array+" "+ numeri;
+}
+document.getElementById("casuali1").innerHTML=array;
+}
+
+
+</script>
+</body>
+</html>
