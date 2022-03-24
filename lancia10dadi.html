@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="LancioDado()"> Lancia il dado </button>
+    <button onclick="Lancio10Dadi(n)"> Lancia 10 dadi </button> 
+    <p id="output1"></p>
+     <script>
+         function LancioDado() {
+             let dado=0;
+             let casuale=0;
+             casuale=Math.random();
+             dado=Math.round(casuale*5)+1;
+             document.getElementById("output").innerHTML=casuale+"<br>";
+         }
+        function Lancio10Dadi(n) {
+            let dado=0;
+            let casuale=0;
+            for(let i=0;i<10;i++);
+            casuale=Math.random();
+            dado=Math.round(casuale*5)+1;
+            str=str+" "+dado+"<br>";
+
+        }
+            document.getElementById("output").innerHTML=casuale+"<br>";
+            
+     </script>
+
+
+
+    }
+</body>
+</html>
