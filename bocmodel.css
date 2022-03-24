@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      h1{ font-size:12px;
+          color:blue;
+      }
+      div{ width:155px;
+           height:155px;
+            border: 1px outset black;  
+            background-color:#b5b3ae;
+            margin:1px;
+            padding:15px;
+            float:left;
+      }
+      #div {
+         background-color:red;
+      }
+      p { font-size:50px;}
+      ul,li {
+        text-align:centr;
+        font-size:8px;
+      }
+    </style>
+    
+  </head>
+  <body>
+  </body>
+  <h1>Album di classe
+  </h1>  
+  <div id="prof">
+    <p>0 </p>
+   <ul>
+  
+
+  </div>
+  <div>
+    <p> 9 </p>
+  </div>
+  <div>
+    <p> 7 </p>
+  </div>
+<html>  
