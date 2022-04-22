@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>fattorizzatore di base</h1>
+    <input type="text" name="" id="mioinput">
+    <br>
+    <button id="miobottone" onclick="eseguo();">fattorizza il numero</button>
+    <script>
+        function eseguo() {
+            let n=0;
+            n=document.getElementById("mioinput").value;
+            document.write("limite massimo per il fattorizzatore è:"+n +"<br>");
+
+            for(let i=1;i<=n;i++)
+        {
+            document.write("<span>"+i+ ":"+"</span>"+"<br>");
+            document.write("<span>"+fattorizzatore(i)+"</span>"+"<br>");
+        }
+
+    }
+function fattorizzatore(n)
+    {  let stringaFattori="";
+       let fineciclo=n/2;
+       let contafattori=0;
+       for(let fattore=1; fattore<=fineciclo;fattore++)
+         {
+             if (n%fattore==0)
+             { 
+                stringaFattori=stringaFattori+ fattore+" ";
+                contaifattori++;
+         }
+    }
+         return stringaFattori + " #"+contaifattori;
+        }
+     </script>
+</body>
+</html>
